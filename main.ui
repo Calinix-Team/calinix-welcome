@@ -109,13 +109,13 @@
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="tele">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>50</y>
+      <x>420</x>
+      <y>40</y>
       <width>71</width>
-      <height>71</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -136,21 +136,21 @@ border: 0px solid white;</string>
     </property>
     <property name="iconSize">
      <size>
-      <width>64</width>
-      <height>64</height>
+      <width>54</width>
+      <height>54</height>
      </size>
     </property>
     <property name="default">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="disc">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>50</y>
-      <width>81</width>
-      <height>81</height>
+      <x>350</x>
+      <y>40</y>
+      <width>71</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -171,18 +171,18 @@ border: 0px solid white;</string>
     </property>
     <property name="iconSize">
      <size>
-      <width>64</width>
+      <width>54</width>
       <height>64</height>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="reddit">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>50</y>
-      <width>81</width>
-      <height>81</height>
+      <x>490</x>
+      <y>40</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -203,18 +203,18 @@ border: 0px solid white;</string>
     </property>
     <property name="iconSize">
      <size>
-      <width>64</width>
-      <height>64</height>
+      <width>54</width>
+      <height>54</height>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="yt">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>50</y>
-      <width>81</width>
-      <height>81</height>
+      <x>550</x>
+      <y>40</y>
+      <width>71</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -235,8 +235,8 @@ border: 0px solid white;</string>
     </property>
     <property name="iconSize">
      <size>
-      <width>64</width>
-      <height>64</height>
+      <width>54</width>
+      <height>54</height>
      </size>
     </property>
    </widget>
@@ -295,7 +295,7 @@ border: 0px solid white;</string>
       <x>410</x>
       <y>50</y>
       <width>71</width>
-      <height>71</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -324,7 +324,7 @@ border: 0px solid white;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_10">
+   <widget class="QPushButton" name="gh">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -356,7 +356,7 @@ border: 0px solid white;</string>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_11">
+   <widget class="QPushButton" name="forum">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -388,7 +388,7 @@ border: 0px solid white;</string>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_12">
+   <widget class="QPushButton" name="sourceforge">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -420,7 +420,7 @@ border: 0px solid white;</string>
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="donate">
     <property name="geometry">
      <rect>
       <x>810</x>
@@ -436,7 +436,7 @@ border: 0px solid white;</string>
      <string>Donate</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_15">
+   <widget class="QPushButton" name="wiki">
     <property name="geometry">
      <rect>
       <x>810</x>
@@ -452,7 +452,7 @@ border: 0px solid white;</string>
      <string>Wiki</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_16">
+   <widget class="QPushButton" name="sguide">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -468,7 +468,7 @@ border: 0px solid white;</string>
      <string>Starters Guide</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_17">
+   <widget class="QPushButton" name="getinv">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -500,7 +500,7 @@ border: 0px solid white;</string>
      <string>Mail</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_19">
+   <widget class="QPushButton" name="blog">
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -513,11 +513,11 @@ border: 0px solid white;</string>
      <string notr="true">color:white</string>
     </property>
     <property name="text">
-     <string>Forum</string>
+     <string>Blog</string>
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="install">
    <property name="geometry">
     <rect>
      <x>880</x>
@@ -559,7 +559,7 @@ color:white</string>
     <string>Run the Setup Guide after Installation</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_14">
+  <widget class="QPushButton" name="setup">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -576,7 +576,7 @@ color:white</string>
     <string>Setup CalinixOS</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_20">
+  <widget class="QPushButton" name="close">
    <property name="geometry">
     <rect>
      <x>970</x>
