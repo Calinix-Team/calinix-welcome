@@ -4,6 +4,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QLineEdit
 from PyQt5.QtGui import QPixmap
 import webbrowser
+import os
 
 import subprocess as sb
 
@@ -27,12 +28,36 @@ class WelcomeScreen(QDialog):
         self.install.clicked.connect(self.StartInstall)
         self.close.clicked.connect(self.Quit)
         self.setup.clicked.connect(self.StartInstall)
+
+        self.autos.toggled.connect(self.Autostart)
     
     def Quit(self):
-        sys.exit(app._exec)
+        sys.exit()
     
     def OpenW(self, url):
         webbrowser.open(url)
+
+    def Autostart(self):
+        status = self.autos.checkState()
+        print(status)
+        if status == 0:
+            os.remove(os.path.join(os.path.expanduser("~"), ".config", "autostart", "calinix-welcome.desktop"))
+        elif status == 2:
+            content = """[Desktop Entry]
+Name=CalinixOS Welcome
+GenericName=CalinixOS Welcome
+X-GNOME-FullName=CalinixOS Welcome
+Comment=Welcome Application for CalinixOS Classic
+Exec=/usr/local/bin/calinix-welcome
+Icon=calinix-hello
+Terminal=false
+Type=Application
+Categories=GTK;Settings;Security;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+Keywords=welcome;tool;
+StartupNotify=true"""
+            with open(os.path.join(os.path.expanduser("~"), ".config", "autostart", "calinix-welcome.desktop"), "w") as f:
+                f.write(content)
+                f.close()
 
     def StartInstall(self):
         run("pkexec --disable-internal-agent \"/usr/bin/calamares\" \"$@\"")

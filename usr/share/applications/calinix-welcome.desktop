@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=CalinixOS Welcome
+GenericName=CalinixOS Welcome
+X-GNOME-FullName=CalinixOS Welcome
+Comment=Welcome Application for CalinixOS Classic
+Exec=/usr/local/bin/calinix-welcome
+Icon=calinix-hello
+Terminal=false
+Type=Application
+Categories=GTK;Settings;Security;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+Keywords=welcome;tool;
+StartupNotify=true
